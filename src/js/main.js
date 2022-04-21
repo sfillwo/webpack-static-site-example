@@ -6,7 +6,7 @@ function ReadMore(){
 
 function GetTitle(){
 	const text = document.getElementById("title-var").textContent;
-	return text.replace('\\', '"');
+	return text.replace('\\\\', '"');
 }
 
 function MainApp() {
