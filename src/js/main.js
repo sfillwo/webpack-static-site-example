@@ -4,11 +4,16 @@ function ReadMore(){
 	document.getElementById("read-more-btn").remove()
 }
 
+function GetTitle(){
+	return document.getElementById("title-var").textContent;
+}
+
 function MainApp() {
 	return (
 		<div className="container">
 	      <header>
 	        <h1>I Can Haz Cheeseburger?</h1>
+	        <h2>{GetTitle()}</h2>
 	      </header>
 	      <div className="layout">
 	        <div className="col main">
