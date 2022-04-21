@@ -5,7 +5,8 @@ function ReadMore(){
 }
 
 function GetTitle(){
-	return document.getElementById("title-var").textContent;
+	const text = document.getElementById("title-var").textContent;
+	return text.replace('\\', '"');
 }
 
 function MainApp() {
