@@ -6,9 +6,9 @@ function ReadMore(){
 
 function GetTitle(){
 	const text = document.getElementById("title-var").textContent;
-	console.log(text);
-	const rep_text = text.replaceAll('\\', '"');
-	return rep_text;
+	const rep_text = text.replaceAll('||', '"');
+	console.log(JSON.parse(rep_text));
+	return text;
 }
 
 function MainApp() {
